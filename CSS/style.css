@@ -1,0 +1,122 @@
+/* POST SLIDER*/
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.post-slider .slider-title {
+  text-align: center;
+  margin: 30px auto;
+  animation-duration: 2s !important;
+}
+
+.post-slider .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #006669;
+  cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 405px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.post-slider .post-wrapper .post {
+  width: 300px !important;
+  height: 400px;
+  margin: 0 10px;
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+}
+
+.post .card {
+  position: relative;
+  background: white;
+  border: 0;
+}
+
+.post .card:hover {
+  box-shadow: 2px 14px 36px -1px rgba(0, 0, 0, 0.75);
+}
+
+.post .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.2s;
+}
+.post .card .face.face1 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.post .card:hover .face.face1 {
+  transform: translateY(0);
+}
+.post .card .face.face1 .content {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+.post .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.post .card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.post .card .face.face1 .content h3 {
+  margin: 10px 0 0 9px;
+  padding: 0;
+  color: #fff;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.post .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(-100px);
+}
+.post .card:hover .face.face2 {
+  transform: translateY(0px);
+}
+.post .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  color: #17a2b8;
+  font-size: 17px;
+}
+.post .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.post .card .face.face2 .content a:hover {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+}

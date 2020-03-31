@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+section {
+  display: block;
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28.8px;
+}
+
+h3 {
+  font-size: 19.8px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section {
+  display: block;
+  margin: 15px 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.team-slider {
+  position: relative;
+  max-width: 1180px;
+}
+.team-slider .member {
+  padding: 0 7px;
+  margin: 0;
+  position: relative;
+  max-height: 450px;
+  overflow: hidden;
+}
+.team-slider .member .details-expander {
+  width: 50px;
+  height: 50px;
+  background-color: #001659;
+  position: absolute;
+  bottom: 0;
+  right: 7px;
+  z-index: 3;
+  cursor: pointer;
+  box-shadow: -1px -1px 2px rgba(34, 37, 44, 0.25);
+}
+.team-slider .member .details-expander:hover {
+  background-color: #001659;
+}
+.team-slider .member .details-expander span {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+  top: 20px;
+  left: 24px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.team-slider .member .details-expander span:first-child {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.team-slider .member .details-expander span:last-child {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.team-slider .member .person-img {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+.team-slider .member .person-img:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.team-slider .member .person-details {
+  padding: 0 15px;
+  background-color: transparent;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  z-index: 2;
+}
+.team-slider .member .person-details .cred {
+  margin-bottom: 25px;
+  padding-right: 50px;
+}
+.team-slider .member .person-details .cred h3 {
+  font-size: 12pt;
+  color: #fff;
+}
+.team-slider .member .person-details .cred h4 {
+  color: #dcae1d;
+  font-size: 14px;
+}
+.team-slider .member .person-details .description {
+  margin-bottom: 25px;
+}
+.team-slider .member.expanded {
+  z-index: 3;
+}
+.team-slider .member.expanded .details-expander span {
+  top: 35px;
+}
+.team-slider .member.expanded .details-expander span:first-child {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.team-slider .member.expanded .details-expander span:last-child {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.team-slider .member.expanded .person-img {
+  box-shadow: 2px 0 3px rgba(34, 37, 44, 0.5);
+}
+.team-slider .member.expanded .person-details {
+  border-color: #22252c;
+  -webkit-transform: translate(0, -90%);
+  transform: translate(0, -90%);
+  background-color: #fff;
+  padding-top: 30px;
+}
+.team-slider .member.expanded .person-details .cred h3 {
+  color: #22252c;
+}
